@@ -1,0 +1,27 @@
+---
+layout:           default
+---
+<div id="head">
+    <div class='logo left'>
+        <a href="/" title="主页">Viney</a>
+    </div>
+    <div id="header">
+        <div class="nav right">
+            <a href="/blog" title="blog">博客</a>
+            <a href="/project" title="projects">项目</a>
+            <a href="/wiki" title="wiki" >百科</a>
+            <a href="/about" title="about" >关于</a>
+            <a href="{{ site.feed }}" rel="feed" title="Subscribes The Feed" target="_blank">订阅</a>
+        </div><!-- .nav -->
+    </div><!-- #header -->
+</div><!-- #head -->
+<div id="content">
+    {{ content }}
+</div><!-- #content --> 
+<div id="footer">
+    <div class="copyright right">
+        {% for line in site.copyright %}
+        <p>{{ line }}</p>
+        {% endfor %}
+    </div>
+</div><!-- #footer -->
